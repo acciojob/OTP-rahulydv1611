@@ -1,30 +1,55 @@
-/*  your css code here. If applicable */
 body {
+  margin: 0;
   font-family: Arial, sans-serif;
-  text-align: center;
-  margin-top: 50px;
+  background-color: #f0f0f0;
 }
 
+/* Main box */
+.container {
+  max-width: 800px;
+  margin: 80px auto;
+  padding: 40px;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 12px;
+  background-color: white;
+}
+
+/* Heading */
 #verification_heading {
   margin-bottom: 10px;
 }
 
+/* Subtext */
 #verification_subtext {
-  color: gray;
-  margin-bottom: 20px;
+  color: #555;
+  margin-bottom: 30px;
 }
 
+/* OTP inputs */
 .code-container {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 .code {
-  width: 50px;
-  height: 60px;
-  font-size: 24px;
+  width: 70px;
+  height: 80px;
+  font-size: 40px;
   text-align: center;
   border: 1px solid #ccc;
-  border-radius: 6px;
+  border-radius: 8px;
+  color: #777;
+}
+
+/* Bottom info box */
+.info {
+  background-color: #eee;
+  padding: 15px;
+  border-radius: 8px;
+  color: #666;
+  width: 70%;
+  margin: auto;
 }
