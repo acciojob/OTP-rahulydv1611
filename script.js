@@ -11,17 +11,20 @@ codes.forEach((code, index) => {
       return;
     }
 
-    if (index < codes.length - 1) {
+    if (value && index < codes.length - 1) {
       codes[index + 1].focus();
     }
   });
 
   code.addEventListener("keydown", (e) => {
     if (e.key === "Backspace") {
-      if (code.value === "" && index > 0) {
+      e.preventDefault();
+
+      if (index > 0) {
+        codes[index].value = "";
         codes[index - 1].focus();
       } else {
-        code.value = "";
+        codes[index].value = "";
       }
     }
   });
